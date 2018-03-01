@@ -20,10 +20,10 @@ $(function() {
     function paintSquare() {
         const colorPicker = $('#colorPicker').val();
         if ($(this).hasClass('init')) {
-            $(this).css('background-color', 'white');
             $(this).removeClass('init');
-        } else {
             $(this).css('background-color', colorPicker);
+        } else {
+            $(this).css('background-color', 'white');
             $(this).addClass('init');
         };
     
