@@ -18,7 +18,15 @@ $(function() {
     }
 
     function paintSquare() {
-        $(this).css('background-color', $('#colorPicker').val());
+        const colorPicker = $('#colorPicker').val();
+        if ($(this).hasClass('init')) {
+            $(this).css('background-color', 'white');
+            $(this).removeClass('init');
+        } else {
+            $(this).css('background-color', colorPicker);
+            $(this).addClass('init');
+        };
+    
     }
 
     // Event Listeners
