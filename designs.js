@@ -36,7 +36,8 @@ $(function() {
         e.preventDefault();
         makeGrid();
     });
-
+    //Default grid
+    makeGrid();
     // Change color on click
     $('#pixelCanvas').on('click', 'td', paintSquare);
 });
